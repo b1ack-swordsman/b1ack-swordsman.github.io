@@ -203,6 +203,7 @@ input:focus {
   margin-bottom: 1.3rem;
 }
 .header .data--text--suptitle {
+  text-align: center;
   font-size: 1.4rem;
   color: #FFFFFF;
 }
@@ -1253,6 +1254,9 @@ input:focus {
   }
   .header .data--text {
     text-align: center;
+  }
+  .header .data--text--suptitle {
+    font-size: 1.2rem;
   }
   .rate {
     padding: 5rem 0;
