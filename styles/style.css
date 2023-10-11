@@ -33,6 +33,9 @@ input:focus {
   margin: 0 auto;
   padding: 0 !important;
 }
+h2 {
+  font-weight: normal;
+}
 .header-bg {
   background-image: url("../img/header/header-bg.jpg");
   background-position: center;
@@ -62,6 +65,24 @@ input:focus {
 }
 .footer--bg {
   background-color: #272725;
+}
+.orange {
+  color: #E27B30;
+}
+.form--info--success {
+  color: #FFFFFF;
+  text-align: center;
+  align-self: center;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.form--info--success a {
+  margin-right: 1rem;
+}
+.form--info--success .success--text {
+  display: flex;
+  font-size: 0.8rem;
 }
 .header {
   padding: 5rem 0 3.7rem 0;
@@ -142,6 +163,7 @@ input:focus {
   padding-top: 10rem;
 }
 .header .info--text--title {
+  display: flex;
   font-size: 3.8rem;
   font-weight: 500;
   line-height: 4.6rem;
@@ -219,6 +241,7 @@ input:focus {
 .services--title {
   font-size: 3.8rem;
   padding: 5.3rem 0 1rem 0;
+  display: flex;
 }
 .services--info {
   width: 100%;
@@ -285,6 +308,8 @@ input:focus {
 .rate--text--title {
   font-size: 3.7rem;
   line-height: 4.6rem;
+  display: flex;
+  flex-direction: column;
 }
 .rate--text--suptitle {
   font-size: 4rem;
@@ -370,6 +395,8 @@ input:focus {
   font-size: 3.5rem;
   line-height: 4.1rem;
   padding: 1.9rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
 }
 .pricelist--form {
   background-color: #2B2C2D;
@@ -440,15 +467,6 @@ input:focus {
   transition: all 0.3s;
   cursor: pointer;
 }
-.pricelist--form .form--info--success {
-  color: #FFFFFF;
-  text-align: center;
-  align-self: center;
-  padding-bottom: 4rem;
-}
-.pricelist--form .form--info--success a {
-  margin-right: 1rem;
-}
 .form--input {
   border: 0.1rem solid #E27B30;
   border-radius: 1.5rem;
@@ -475,6 +493,12 @@ input:focus {
   line-height: 4.6rem;
   color: #FFFFFF;
   padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.advantages--block .success--advantages {
+  display: flex;
+  justify-content: flex-start;
 }
 .advantages .advantages--info {
   display: flex;
@@ -639,6 +663,8 @@ input:focus {
   font-size: 2.4rem;
   line-height: 2.4rem;
   padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 .company--advantages--text {
   width: 100%;
@@ -1072,6 +1098,10 @@ input:focus {
     padding-top: 3rem;
     text-align: center;
   }
+  .header .info--text--title {
+    display: flex;
+    flex-direction: column;
+  }
   .header .info--text--suptitle {
     padding-bottom: 2rem;
   }
@@ -1089,7 +1119,8 @@ input:focus {
     margin: 0;
   }
   .services--title {
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   .services--info {
     margin: 0 auto 3rem auto;
@@ -1426,7 +1457,7 @@ input:focus {
     margin: 1rem 0;
   }
   .rate--text--title {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 2rem;
   }
   .rate--text--suptitle {
@@ -1486,9 +1517,15 @@ input:focus {
   .pricelist .pricelist--form .form--info--success a {
     margin-right: 0.3rem;
   }
+  .advantages--block {
+    padding: 3rem 0 0 0;
+  }
   .advantages--block--title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     padding-bottom: 2rem;
+    display: flex;
+    line-height: 2.5rem;
+    flex-direction: column;
   }
   .advantages .advantages--info--block p {
     padding-top: 2rem;
@@ -1536,6 +1573,9 @@ input:focus {
   }
   .company--info .stats--block p {
     text-align: center;
+  }
+  .company--advantages--title {
+    font-size: 1.9rem;
   }
   .company--btn a {
     font-size: 1.2rem;
@@ -1586,6 +1626,10 @@ input:focus {
   }
   .info {
     padding: 3rem 0 1rem 0;
+  }
+  .request--title {
+    font-size: 3rem;
+    margin: 0;
   }
   .request--main {
     max-width: 30rem;
