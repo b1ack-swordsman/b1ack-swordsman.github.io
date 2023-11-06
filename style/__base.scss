@@ -1,0 +1,53 @@
+@import "__scss-grid";
+
+$bg-color: #F4F1EE;
+
+$ls: 4%;
+
+$black: #232020;
+$title-black: #1C1A1A;
+$gray: #404040;
+$orange: #D48A5C;
+$light-orange: #EAB665;
+
+.alc {
+    font-family: 'Aclonica';
+}
+
+.zxc {
+    font-family: 'ZCOOL XiaoWei';
+}
+
+* {
+    @include default;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+html {
+    @include html;
+}
+
+
+body {
+    @include body;
+}
+
+a {
+    @include a;
+}
+
+$grid: 111rem;
+
+.container {
+    @include container;
+}
+
+@mixin repeat-style {
+    font-family: 'Open Sans';
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: $ls;
+}
