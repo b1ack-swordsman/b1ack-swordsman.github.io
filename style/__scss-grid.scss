@@ -1,0 +1,65 @@
+@mixin default {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin bg-style {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+    font-size: 10px;
+    width: 100%;
+}
+
+@mixin text-style($fz, $lh, $clr) {
+    font-size: $fz;
+    line-height: $lh;
+    color: $clr;
+}
+
+$grid: 120rem;
+@mixin container {
+    max-width: $grid;
+    margin: 0 auto;
+}
+
+$white: #FFFFFF;
+$dark: #000000;
+@mixin a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin body {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+$offset: .1rem;
+@mixin col($n) {
+    $res: 100% / $n;
+    width: #{calc(#{$res} - #{$offset*2})};
+}
+
+
+@mixin media($width) {
+    @media (max-width: $width) {
+        @content
+    }
+}
