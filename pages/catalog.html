@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HANDMADE</title>
+    <link rel="stylesheet" href="../styles/catalog.css" />
+  </head>
+  <body>
+    <header class="header wrapper--colored">
+      <nav class="header__nav nav content">
+        <a href="../index.html" class="logo"> hand<span class="logo--accent">made</span> </a>
+        <button type="button" aria-label="cart menu" class="header__cart-button">
+          <img src="../images/cart.svg" alt="cart icon" />
+        </button>
+        <button type="button" class="burger" aria-label="burger button">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <div class="mobile-wrapper">
+          <button type="button" class="burger burger--close" aria-label="close burger button">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <ul class="nav__links header__links">
+            <li class="nav__item header__item">
+              <a href="../index.html" class="nav__link header__link"> Главная </a>
+            </li>
+            <li class="nav__item header__item header__item--active">
+              <a href="#main" class="nav__link nav__link--active header__link"> Каталог </a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="./about.html" class="nav__link header__link"> О нас </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside class="cartMenu">
+      <div class="content">
+        <div class="cartMenu__header">
+          <button type="button" class="cartMenu__close-button" aria-label="cartMenu close button">
+            <img src="../images/chevron-down.svg" alt="close icon" class="cartMenu__close-icon" />
+          </button>
+          <h2 class="title">Корзина</h2>
+        </div>
+        <ul class="cartMenu__list">
+          <li class="title cartMenu__list-title">Корзина пуста</li>
+        </ul>
+      </div>
+    </aside>
+    <aside class="blur"></aside>
+    <main id="main">
+      <div class="products">
+        <section class="products__content content wrapper">
+          <h2 class="title">Кухонные принадлежности</h2>
+          <ul class="products__list">
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/board.jpg" alt="board" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">1.200 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Разделочная доска</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/spoon.jpg" alt="spoon" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Ложка</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/fork.webp" alt="fork" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Вилка</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/stand.webp" alt="stand" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">1.000 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">
+                Подставка для кухонных приборов
+              </h3>
+            </li>
+          </ul>
+        </section>
+        <section class="products__content content wrapper">
+          <h2 class="title">Мебель</h2>
+          <ul class="products__list">
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img
+                  src="../images/products/cabinet.jpg"
+                  alt="cabinet"
+                  class="products__item-image"
+                />
+                <div class="products__item-hover">
+                  <span class="products__item-price">2.200 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Тумба</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img
+                  src="../images/products/shoeRack.webp"
+                  alt="shoe rack"
+                  class="products__item-image"
+                />
+                <div class="products__item-hover">
+                  <span class="products__item-price">2.500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Обувница</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/table.jpg" alt="table" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">4.500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Стол</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img
+                  src="../images/products/closet.webp"
+                  alt="closet"
+                  class="products__item-image"
+                />
+                <div class="products__item-hover">
+                  <span class="products__item-price">15.000 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Шкаф</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/chair.webp" alt="chair" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">7.500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Стул</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/stool.jpg" alt="stool" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">5.500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Табуретка</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/sofa.jpg" alt="sofa" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">25.000 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Диван</h3>
+            </li>
+          </ul>
+        </section>
+        <section class="products__content content wrapper">
+          <h2 class="title">Украшения</h2>
+          <ul class="products__list">
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/ring.jpg" alt="ring" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">12.200 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Кольцо</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img
+                  src="../images/products/pendant.webp"
+                  alt="pendant"
+                  class="products__item-image"
+                />
+                <div class="products__item-hover">
+                  <span class="products__item-price">20.500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Кулон</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="../images/products/box.jpg" alt="box" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">2.500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Шкатулка</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img
+                  src="../images/products/statue.jpg"
+                  alt="statue"
+                  class="products__item-image"
+                />
+                <div class="products__item-hover">
+                  <span class="products__item-price">17.500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Статуэтка</h3>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer wrapper--colored">
+      <nav class="footer__nav nav content">
+        <a href="../index.html" class="logo">hand<span class="logo--accent">made</span></a>
+        <ul class="nav__links footer__links">
+          <li class="nav__item footer__item">
+            <a href="../index.html" class="nav__link footer__link">Главная</a>
+          </li>
+          <li class="nav__item footer__item">
+            <a href="#main" class="nav__link nav__link--active footer__link footer__link--active"
+              >Каталог</a
+            >
+          </li>
+          <li class="nav__item footer__item">
+            <a href="./about.html" class="nav__link footer__link">О нас</a>
+          </li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="footer__text">Почта: woodCraft@box.com</li>
+          <li class="footer__text">Телефон: +1 (234) 567-89-00</li>
+          <li class="footer__text">Адресс: Lorem ipsum dolor sit amet</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../index.js"></script>
+    <script src="../cartMenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HANDMADE</title>
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <header class="header wrapper--colored">
+      <nav class="header__nav nav content">
+        <a href="#hero" class="logo"> hand<span class="logo--accent">made</span> </a>
+        <button type="button" aria-label="cart menu" class="header__cart-button">
+          <img src="images/cart.svg" alt="cart icon" />
+        </button>
+        <button type="button" class="burger" aria-label="burger button">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <div class="mobile-wrapper">
+          <button type="button" class="burger burger--close" aria-label="close burger button">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <ul class="nav__links header__links">
+            <li class="nav__item header__item header__item--active">
+              <a href="#hero" class="nav__link nav__link--active header__link"> Главная </a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="pages/catalog.html" class="nav__link header__link"> Каталог </a>
+            </li>
+            <li class="nav__item header__item">
+              <a href="pages/about.html" class="nav__link header__link"> О нас </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside class="cartMenu">
+      <div class="content">
+        <div class="cartMenu__header">
+          <button type="button" class="cartMenu__close-button" aria-label="cartMenu close button">
+            <img src="images/chevron-down.svg" alt="close icon" class="cartMenu__close-icon" />
+          </button>
+          <h2 class="title">Корзина</h2>
+        </div>
+        <ul class="cartMenu__list">
+          <li class="title cartMenu__list-title">Корзина пуста</li>
+        </ul>
+      </div>
+    </aside>
+    <aside class="blur"></aside>
+    <main class="main">
+      <div class="hero" id="hero">
+        <section class="hero__content content">
+          <h1 class="hero__title title title--large">Уникальные изделия ручной работы</h1>
+          <a href="pages/catalog.html" class="hero__button button">К каталогу</a>
+        </section>
+      </div>
+      <div class="products wrapper">
+        <section class="products__content content">
+          <h2 class="title content__title">Одни из популярны товаров</h2>
+          <ul class="products__list">
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="images/products/board.jpg" alt="board" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">1200 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Разделочная доска</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="images/products/statue.jpg" alt="statue" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">2500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Статуэтка</h3>
+            </li>
+            <li class="products__item card">
+              <div class="products__item-group">
+                <img src="images/products/box.jpg" alt="" class="products__item-image" />
+                <div class="products__item-hover">
+                  <span class="products__item-price">1500 ₽</span>
+                  <button type="button" class="button">В корзину</button>
+                </div>
+              </div>
+              <h3 class="title title--small products__item-title">Шкатулка</h3>
+            </li>
+          </ul>
+          <a href="pages/catalog.html" class="products__link">
+            К каталогу <span class="products__link-icon">→</span>
+          </a>
+        </section>
+      </div>
+    </main>
+    <footer class="footer wrapper--colored">
+      <nav class="footer__nav nav content">
+        <a href="#header" class="logo">hand<span class="logo--accent">made</span></a>
+        <ul class="nav__links footer__links">
+          <li class="nav__item footer__item">
+            <a href="#hero" class="nav__link nav__link--active footer__link footer__link--active"
+              >Главная</a
+            >
+          </li>
+          <li class="nav__item footer__item">
+            <a href="pages/catalog.html" class="nav__link footer__link">Каталог</a>
+          </li>
+          <li class="nav__item footer__item">
+            <a href="pages/about.html" class="nav__link footer__link">О нас</a>
+          </li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="footer__text">Почта: woodCraft@box.com</li>
+          <li class="footer__text">Телефон: +1 (234) 567-89-00</li>
+          <li class="footer__text">Адресс: Lorem ipsum dolor sit amet</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="index.js"></script>
+    <script src="cartMenu.js"></script>
+  </body>
+</html>

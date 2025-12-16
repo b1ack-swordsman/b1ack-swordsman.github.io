@@ -1,0 +1,9 @@
+@import url(utils/index.css);
+
+.products__content:first-child {
+  margin: 100px auto 80px;
+}
+
+.products__content:not(:first-child) {
+  margin: 0 auto 80px;
+}

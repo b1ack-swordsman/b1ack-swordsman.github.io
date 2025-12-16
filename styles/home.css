@@ -1,0 +1,63 @@
+@import url(utils/index.css);
+
+.hero {
+  min-height: 400px;
+  background: #7c2721;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__title {
+  color: #fff;
+}
+
+.hero__button {
+  font-size: 25px;
+  margin: 25px 0 0;
+  padding: 15px 25px;
+}
+
+.products {
+  max-width: 1075px;
+  margin: 0 auto;
+}
+
+.products__link {
+  max-width: 165px;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__link:hover {
+  font-style: italic;
+}
+
+.products__link:hover .products__link-icon {
+  animation: 1s ease 0.3s infinite moveForward;
+}
+
+.products__link-icon {
+  margin: 0 0 0 10px;
+  display: inline-block;
+  transition: transform ease 0.3s;
+}
+
+@keyframes moveForward {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(30%, 0);
+  }
+}
